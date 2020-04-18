@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2 align=center style="color:DodgerBlue">FIFA 19</h2>
+<p align=center>FIFA Analysis and Visualization</p>
+
+
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['FIFA', 'Top 5 players value in Million Euros'],
+          ['L. Messi',     110.5],
+          ['Cristiano Ronaldo',      77],
+          ['Neymar Jr',  188.5],
+          ['De Gea', 72],
+          ['K. De Bruyne',    102]
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+<div class="row">
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/1.png" style="width:100%">
+
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/2.png"  hspace="20" style="width:300%" hspace="20">
+  </div>
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/3.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/4.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/5.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/6.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/7.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/8.png"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/vijaysanapala/Downloads/9.png"  style="width:100%">
+  </div>
+
+</div>
+
+</body>
+</html>
